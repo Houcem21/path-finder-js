@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+    color: white;
+}
+
+#board-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid red;
+    max-width: 400px;
+}
+
+.box {
+    flex: 12%;
+    border: 1px solid grey;
+    
+}
+.box:hover {
+    background-color: grey;
+    
+}
+
+.obstacle {
+    background-color: #545454;
+}
+
+.start {
+    background-color: green;
+}
+
+.exit {
+    background-color: red;
+}
+
+.checking {
+    background-color: rgb(39, 60, 100);
+}
+
+.visited {
+    background-color: lightblue;
+}
+
+
+.instruction {
+    position: absolute;
+}
+
+.instruction-text {
+    animation: undim 1s linear 1s infinite;
+}
+
+@keyframes undim {
+    from {opacity: 1;}
+    to {opacity: 0.5;}
+}
